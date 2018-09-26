@@ -16,6 +16,13 @@
 
 //Code here
 
+var me = {
+  name: "Daniel",
+  age: 28
+}
+
+alert(me.name);
+
 
 
 ////////// PROBLEM 2 //////////
@@ -27,6 +34,15 @@
 
 //Code here
 
+var favoriteThings = {
+  band: "Fu Manchu",
+  food: "Ceviche",
+  person: "Mom",
+  book: "1Q84",
+  movie: "Saving Private Ryan",
+  holiday: "Thanksgiving"
+}
+
 
 
 /*
@@ -35,6 +51,9 @@
 
 //Code here
 
+favoriteThings.car = "GTI";
+favoriteThings.brand = "Vans"
+
 
 
 /*
@@ -42,6 +61,9 @@
 */
 
 //Code here
+
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 
@@ -57,6 +79,18 @@
 
 //Code here
 
+var backPack = {
+
+};
+
+var item = 'firstPocket';
+
+backPack['firstPocket'] = item;
+
+backPack['firstPocket'] = "chapstick";
+
+
+
 
 
 /*
@@ -64,6 +98,8 @@
 */
 
 //Code here
+
+alert(backPack);
 
 
 
@@ -74,6 +110,8 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+
+console.log(backPack);
 
 
 
@@ -98,6 +136,10 @@ var user2 = {
 
 //Code Here
 
+user2.name = "Tyler S. McGinnis";
+
+user2.email = "tyler.mcginnis@devmounta.in"
+
 
 
 
@@ -121,6 +163,10 @@ var user2 = {
 
 //Code Here
 
+var methodCollection = {
+
+};
+
 
 
 /*
@@ -130,6 +176,14 @@ var user2 = {
 
 //Code Here
 
+methodCollection.alertHello = function () {
+  alert('hello')
+};
+
+methodCollection.logHello = function () {
+  console.log('hello')
+};
+
 
 
 /*
@@ -137,6 +191,9 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello();
+
+methodCollection.logHello();
 
 
 
@@ -149,6 +206,12 @@ var user2 = {
 
 //Code Here
 
+function makePerson(name, birthday, ssn) {
+  let obj = { name, birthday, ssn };
+
+  return obj;
+}
+
 
 
 ////////// PROBLEM 7 //////////
@@ -160,4 +223,9 @@ var user2 = {
 
 //Code Here
 
+function makeCard(cardNumber, expirationDate, securityCode) {
+  let obj = { cardNumber, expirationDate, securityCode };
+
+  return obj;
+}
 
